@@ -11,6 +11,7 @@ html {
   width: 100vw;
   height: 900px;
   background-color: white;
+  transition: all ease-in-out 300ms;
 }
 .full-height {
   height: 100%;
@@ -440,6 +441,11 @@ video::-webkit-media-controls-current-time-display {
   height: auto !important;
 } */
 
+/* TRANSITIONS */
+.desktop {
+  transition: all ease-in-out 300ms;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1422px) {
   .herramientas {
@@ -459,6 +465,12 @@ video::-webkit-media-controls-current-time-display {
 }
 
 @media screen and (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .bg-section {
+    height: 800px;
+  }
   h1 {
     font-size: 30px;
   }
@@ -507,5 +519,14 @@ video::-webkit-media-controls-current-time-display {
     margin-right: -15px;
     margin-top: -150px;
     width: 291px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .bg-section {
+    height: 800px;
+  }
+  .main-title {
+    top: 70%;
   }
 }
